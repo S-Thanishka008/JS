@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Vending Machine</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg,#502d55,#935073,#f6dbc0,#f8f4e9);
+            background-size: 300% 300%;
+            animation: serene 5s ease-in-out infinite;
+            transition: transform 0.3s ease,background 0.3s ease,box-shadow 0.3s ease;
+            }
+            @keyframes serene{
+            0%{
+                background-position: 0% 50%;
+                }
+                50%{
+                    background-position: 100% 50%;
+                }
+                100%{
+                    background-position: 0% 50%;
+                }
+            }
+            .card{
+                background: whitesmoke;
+                padding: 30px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: #935073;
+                font-size: 2rem;
+                max-width: 500px;
+                width:90%;
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+                align-items: center;
+            }
+            button{
+                font-size: 1.5rem;
+                padding: 10px 20px;
+                font-size: 25px;
+                background-color:#f6dbc0;
+                color: black;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            button:hover{
+                background-color: #935073;
+                color: aliceblue;
+            }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Smart Vending Machine</h1>
+        <p>Click below to start the smart vending machine</p>
+        <button type="button" onclick="openVM()">Start Machine</button>
+    </div>
+    <script src="task1.js"></script>
+</body>
+</html>
