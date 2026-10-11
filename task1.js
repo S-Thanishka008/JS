@@ -10,13 +10,14 @@ function showMenu(){
 function change(rs,amt,item){
     if (amt<rs){
         alert("!!!Insufficient balance!!!");
-        return false
+        return false;
     }else if (amt===rs){
         alert("Exact amount received...You bought :"+item);
-        return true
+        return true;
     }else{
         var rem=amt-rs;
         alert("Item:"+item+"\n Change : Rs." +rem);
+        return true;
     }
 }
 function count(){
@@ -32,8 +33,9 @@ function pattern(row){
         for (var c=1 ; c<=r ; c++){
             txt=txt + c +" ";
         }
-        console.log(txt);
+        console.log("Row " + r + "of" + row + ":"+ txt);
     }
+    console.log("Finished printing " + row + ": "+txt);
 }
 function openVM(){
     var req=true;
@@ -63,7 +65,7 @@ function openVM(){
             continue;
         }
         var amt=Number(prompt("Price is Rs."+price+". Enter your money :"))
-        if (money<=0 || isNaN(amt)){
+        if (amt<=0 || isNaN(amt)){
             alert("Invalid amount! Please enter a valid positive number.");
             again=confirm("Do you want to make another purchase?");
             continue;
