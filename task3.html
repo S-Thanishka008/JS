@@ -11,6 +11,21 @@
             background-color:#935073;
             color: aliceblue;
             font-size: 1.5rem;
+            background: linear-gradient(90deg,#502d55,#935073,#f6dbc0,#f8f4e9);
+            background-size: 300% 300%;
+            animation: serene 7s ease-in-out infinite;
+            transition: transform 0.3s ease,background 0.3s ease,box-shadow 0.3s ease;
+            }
+        @keyframes serene{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
         }
         #output{
             background-color: rgb(47, 41, 34);
