@@ -3,7 +3,7 @@ function page(text){
     opelm.textContent += text + "\n"
 }
 function MT(num){
-    page('MULTIPLICATION TABLE FOR ${num}');
+    page(`MULTIPLICATION TABLE FOR ${num}`);
     for (let i = 1;i < 11; i++){
         page(`${num} * ${i} = ${num*i}`)
     }
@@ -59,9 +59,9 @@ function prog(){
                 type="odd";
             }
             let sum=sumnum(num);
-            page('Entered Number: ${num}');
-            page('Number type: ${type}');
-            page('Sum of Natural Numbers : ${sum} \n');
+            page(`Entered Number: ${num}`);
+            page(`Number type: ${type}`);
+            page(`Sum of Natural Numbers : ${sum} \n`);
             MT(num);
             if (type==="even"){
                 sq(num);
